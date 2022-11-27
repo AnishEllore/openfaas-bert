@@ -1,0 +1,15 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:31112
+functions:
+  bert:
+    lang: python3-flask-debian
+    handler: ./bert
+    image: anishellore5/bert:latest
+    environment:
+      read_timeout: "5m"
+      write_timeout: "5m"
+      exec_timeout: "5m"
+    build_args:
+      TEST_ENABLED: false
