@@ -6,6 +6,7 @@ Install openfaas on a kubernetes cluster. [Steps](https://docs.openfaas.com/depl
 
 ## Deploy Bert
 **Before starting this step you should have some dummy function deployed to see if your setup is working**
+
 Use the below steps to deploy BERT to OpenFaaS
 ```
 faas-cli template store list
